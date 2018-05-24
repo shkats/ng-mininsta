@@ -1,0 +1,7 @@
+<div style="background-color:#F0F0F0">
+<div *ngIf="dontLike">   
+    <button type="button" class="btn" (click)="noLikes()"><i class="fa fa-heart-o"></i></button> 
+</div>    
+<div *ngIf="like">
+    <button type="button" class="btn" (click)="likes()"><i class="fa fa-heart"></i></button>
+</div>

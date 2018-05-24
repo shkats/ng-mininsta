@@ -1,0 +1,16 @@
+<div class="container"> 
+  <header>
+  </header>
+  <div class="row justify-content-center">
+    <div class="col-10 col-md-6 col-sm-12 col-xs-12">
+      <hr>
+      <div *ngFor="let element of elements.Avengers">
+             <app-like></app-like> 
+            <p>{{ element.hero_name }}</p>
+            <img src="{{ element.picture }}" alt="..." class="img-thumbnail" style="width:100%">
+            <a [routerLink]="['element']" [queryParams]='{id: element.id, hero_name:element.hero_name, name: element.first_name, lname:element.last_name, age:element.age, image:element.picture}'>More Details...</a>
+        </div> 
+    </div>
+      <div class="col-md-2"><app-user></app-user></div>
+</div>
+</div>
